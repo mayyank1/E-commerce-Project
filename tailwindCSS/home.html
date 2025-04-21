@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <!-- Navigation Bar & Logo -->
+    <header class=" flex justify-between bg-black text-white fixed top-0 w-full z-50 px-4 py-2 items-center md:pb-4 not-md:flex-col">
+        <p class="lg:text-6xl md:text-5xl text-5xl text-blue-50 font-black font-serif mask-t-from-neutral-50">EcomZone</p>
+        <nav class="flex flex-row justify-between space-x-20 text-xl not-md:flex not-md:flex-col">
+            <a href="#home" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Home</a>
+            <a href="#products" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Products</a>
+            <a href="#about" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">About</a>
+            <a href="#contact" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Contact</a>
+            <input type="text" placeholder="Search.." class="text-black bg-amber-50 text-center" id="searchBar">
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+     <main class=" md:min-h-screen bg-no-repeat bg-cover bg-center hero mt-44 md:mt-18 h-[500px] text-white flex flex-col items-center justify-between p-5 md:pb-80">
+        <h1 class="md:text-4xl lg:text-5xl text-3xl whitespace-pre uppercase font-bold">🔥 Big  Sale  on  Summer  Collection!</h1>
+        <p class="lg:text-3xl md:text-2xl text-xl italic">Up to 50% off on selected items.</p>
+        <button id="shop" class="text-5xl not-md:text-4xl p-6 shadow-2xl/80   md:hover:bg-red-500  active:scale-110 transition duration-300 rounded-full">Shop now!</button>
+     </main>
+
+     <!-- Product Cards -->
+     <section>
+        <h3 class="text-4xl md:text-6xl bg-black text-white flex justify-center md:p-1.5 relative overflow-hidden md:h-[10vh] h-[6vh] ">Featured Products</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-xl md:p-5 md:mt-2.5 h-[50vh]">
+          <div class="product flex flex-col items-center border md:p-1.5 pb-5 md:shadow-xl/100 justify-between text-amber-50 bg-red-500 not-md:h-[80vh] rounded-lg">
+              <img src="/resources/img/shoe.jpg" alt="Addidas Shoe"
+              class="md:h-[200px] md:w-[200px] h-[50vh]">
+              <p>Addidas shoe</p>
+              <p>$67.5</p>
+              <button class="p-4 shadow-2xl/80   md:hover:bg-gray-700  active:scale-110 transition duration-300 rounded-full">Shop</button>
+          </div>
+          <div class="product flex flex-col items-center border md:p-1.5 pb-5 md:shadow-xl/100 justify-between text-amber-50 bg-blue-800 not-md:h-[80vh] rounded-lg">
+              <img src="/resources/img/t-shirt.jpg" alt="Men's Shirt"
+               class="md:h-[180px] md:w-[200px] h-[50vh] not-md:shadow-xl/80">
+              <p>Men's Shirt</p>
+              <p>$7.65</p>
+              <button class="p-4 shadow-2xl/80   md:hover:bg-red-500  active:scale-110 transition duration-300 rounded-full">Shop</button>
+          </div>
+          <div class="product flex flex-col items-center border md:p-1.5 pb-5 md:shadow-xl/100 justify-between text-amber-50 bg-gray-600 not-md:h-[80vh] rounded-lg">
+              <img src="/resources/img/jeans.jpg" alt="Men's Jeans"
+               class="md:h-[200px] md:w-[200px] h-[50vh] ">
+              <p>Men's Jeans</p>
+              <p>$15.25</p>
+              <button class="p-4 shadow-2xl/80   md:hover:bg-orange-400  active:scale-110 transition duration-300 rounded-full">Shop</button>
+          </div>
+          <div class="product flex flex-col items-center border md:p-1.5 pb-5 md:shadow-xl/100 justify-between text-amber-50 bg-orange-400 not-md:h-[80vh] rounded-lg">
+              <img src="/resources/img/chain.jpg" alt="Men's Gold Chain"  class="md:h-[200px] md:w-[200px] h-[50vh] ">
+              <p>Men's Gold Chain</p>
+              <p>$125</p>
+              <button class="p-4 shadow-2xl/80   md:hover:bg-blue-800  active:scale-110 transition duration-300 rounded-full">Shop</button>
+          </div>
+        <div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="md:mt-[50vh] lg:mt-[5vh] mt-480">
+        <div class="flex flex-col items-center gap-10 bg-black text-white p-10">
+          <div class="md:text-4xl text-3xl text-blue-50 font-black font-serif mask-t-from-neutral-50">
+            <p>EcomZone - Best deals online</p>
+          </div>
+          <div class="flex md:flex-row  md:space-x-10 flex-col space-y-3 font-bold">
+            <a href="#home" class="md:hover:scale-110 transition duration-300 active:scale-95">Home</a>
+            <a href="#products" class="md:hover:scale-110 transition duration-300 active:scale-95">Products</a>
+            <a href="#about" class="md:hover:scale-110 transition duration-300 active:scale-95">About</a>
+            <a href="#contact" class="md:hover:scale-110 transition duration-300 active:scale-95">Contact</a>
+          </div>
+          <div class="flex md:flex-row md:space-x-10 flex-col space-y-3 text-amber-600">
+            <p>Phone no: +91 12345 67890</p>
+            <p>Email : email@example.com</p>
+          </div>
+          <div class="md:text-2xl font-extralight">
+            <p>© 2025 EcomZone. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <script src="/tailwindCSS/src/script.js"></script>
+</body>
+</html>
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
