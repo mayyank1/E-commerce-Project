@@ -9,15 +9,16 @@
 <body>
     <!-- Navigation Bar & Logo -->
     <header class=" flex justify-between bg-black text-white fixed top-0 w-full z-50 px-4 py-2 items-center md:pb-4 not-md:flex-col">
-        <p class="lg:text-6xl md:text-5xl text-5xl text-blue-50 font-black font-serif mask-t-from-neutral-50">EcomZone</p>
-        <nav class="flex flex-row justify-between space-x-20 text-xl not-md:flex not-md:flex-col">
-            <a href="#home" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Home</a>
-            <a href="#products" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Products</a>
-            <a href="#about" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">About</a>
-            <a href="#contact" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Contact</a>
-            <input type="text" placeholder="Search.." class="text-black bg-amber-50 text-center" id="searchBar">
-        </nav>
-    </header>
+      <p class="lg:text-6xl md:text-5xl text-5xl text-blue-50 font-black font-serif mask-t-from-neutral-50">EcomZone</p>
+      <nav class="flex flex-row justify-between space-x-20 text-xl not-md:flex not-md:flex-col">
+          <a href="#home" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Home</a>
+          <a href="#products" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Products</a>
+          <a href="#about" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">About</a>
+          <a href="#contact" class="md:hover:text-red-300 md:hover:scale-110 transition duration-300 active:scale-95 visited:text-gray-100 ">Contact</a>
+          <input type="text" placeholder="Search.." class="text-black bg-amber-50 text-center not-md:hidden md:scale-60 lg:scale-90" id="searchBar">
+          <span class="text-3xl font-bold text-black back h-15 w-15 p-1.5 not-md:hidden rounded-2xl" id="cartCount">0</span>
+      </nav>
+  </header>
 
     <!-- Hero Section -->
      <main class=" md:min-h-screen bg-no-repeat bg-cover bg-center hero mt-44 md:mt-18 h-[500px] text-white flex flex-col items-center justify-between p-5 md:pb-80">

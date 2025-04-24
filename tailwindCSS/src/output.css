@@ -38,6 +38,7 @@
     --font-weight-bold: 700;
     --font-weight-black: 900;
     --radius-lg: 0.5rem;
+    --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -202,9 +203,6 @@
   .z-50 {
     z-index: 50;
   }
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
   .mt-44 {
     margin-top: calc(var(--spacing) * 44);
   }
@@ -220,6 +218,9 @@
   .table {
     display: table;
   }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-\[6vh\] {
     height: 6vh;
   }
@@ -228,6 +229,9 @@
   }
   .h-\[500px\] {
     height: 500px;
+  }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
   }
   .w-full {
     width: 100%;
@@ -276,6 +280,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -320,17 +327,11 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
-  .p-0 {
-    padding: calc(var(--spacing) * 0);
-  }
-  .p-0\.5 {
-    padding: calc(var(--spacing) * 0.5);
-  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
+  .p-1\.5 {
+    padding: calc(var(--spacing) * 1.5);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -343,12 +344,6 @@
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-  .px-0 {
-    padding-inline: calc(var(--spacing) * 0);
-  }
-  .px-0\.5 {
-    padding-inline: calc(var(--spacing) * 0.5);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -447,6 +442,11 @@
       display: flex;
     }
   }
+  .not-md\:hidden {
+    @media not (width >= 48rem) {
+      display: none;
+    }
+  }
   .not-md\:h-\[80vh\] {
     @media not (width >= 48rem) {
       height: 80vh;
@@ -529,6 +529,14 @@
   .md\:w-\[200px\] {
     @media (width >= 48rem) {
       width: 200px;
+    }
+  }
+  .md\:scale-60 {
+    @media (width >= 48rem) {
+      --tw-scale-x: 60%;
+      --tw-scale-y: 60%;
+      --tw-scale-z: 60%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
   .md\:grid-cols-2 {
@@ -663,6 +671,14 @@
       margin-top: 5vh;
     }
   }
+  .lg\:scale-90 {
+    @media (width >= 64rem) {
+      --tw-scale-x: 90%;
+      --tw-scale-y: 90%;
+      --tw-scale-z: 90%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -689,6 +705,11 @@
 }
 .hero {
   background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(/resources/img/shoe.jpg);
+}
+.back {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/vector-1738944911844-bbf98f76c155?q=80&w=2360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
