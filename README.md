@@ -1,4 +1,4 @@
-                                                                      📌 Step-by-Step Tasks for E-commerce Homepage
+                                                             📌 Step-by-Step Tasks for E-commerce Homepage
 
 
 
